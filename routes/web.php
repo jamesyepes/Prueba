@@ -27,7 +27,7 @@ Route::get('/inicio', function () {
 //Route::get('consul_establecimiento','establecimientoControler@consultar');
 Auth::routes();
 
-Rote::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('tipoestablecimiento','tipoestablecimientoController');
 //Route::get('tipoestablecimiento/create','tipoestablecimientoController@create');
